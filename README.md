@@ -2,6 +2,8 @@
 
 The code for implementing our ***GI-PIP: Do We Require Impractical Auxiliary Dataset for Gradient Inversion Attacks?***
 
+<img src="./figures/comparison.png" width="100%">
+
 ## Requirements
 
 Our project is implemented based on PyTorch and basic Python environment. Here, we provide a simple instruction to configure the essential python libraries:
@@ -64,8 +66,6 @@ Main options are listed as follows:
 You can find full options in `.\inversefed\options.py`
 
 ### Experiments for batch recovery
-
-<img src="./figures/comparison.png" width="100%">
 
 CIFAR10:
 ```bash
