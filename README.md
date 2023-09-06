@@ -69,28 +69,28 @@ You can find full options in `.\inversefed\options.py`
 
 CIFAR10:
 ```bash
-python rec_mult.py --signed --save_image --cost_fn sim  --indices def  --weights equal --init randn --max_iterations 10000 --model ResNet18 --dataset CIFAR10 --data_path /home/ubuntu/data/CIFAR10 --num_images 1 --lr 1e-1 --tv 1e-6 --ano 1e-6
+python rec_mult.py --save_image --cost_fn sim  --indices def  --weights equal --init randn --max_iterations 10000 --model ResNet18 --dataset CIFAR10 --data_path /home/ubuntu/data/CIFAR10 --num_images 1 --lr 1e-1 --tv 1e-6 --ano 1e-6
 ```
 
 ```bash
-python rec_mult.py --signed --save_image --cost_fn sim  --indices def  --weights equal --init randn --max_iterations 10000 --model ResNet18 --dataset CIFAR10 --data_path /home/ubuntu/data/CIFAR10 --num_images 4 --lr 1e-1 --tv 1e-5 --ano 1e-4
+python rec_mult.py --save_image --cost_fn sim  --indices def  --weights equal --init randn --max_iterations 10000 --model ResNet18 --dataset CIFAR10 --data_path /home/ubuntu/data/CIFAR10 --num_images 4 --lr 1e-1 --tv 1e-5 --ano 1e-4
 ```
 
 ```bash
-python rec_mult.py --signed --save_image --cost_fn sim  --indices def  --weights equal --init randn --max_iterations 10000 --model ResNet18 --dataset CIFAR10 --data_path /home/ubuntu/data/CIFAR10 --num_images 4 --lr 1e-1 --tv 5e-4 --ano 5e-4
+python rec_mult.py --save_image --cost_fn sim  --indices def  --weights equal --init randn --max_iterations 10000 --model ResNet18 --dataset CIFAR10 --data_path /home/ubuntu/data/CIFAR10 --num_images 4 --lr 1e-1 --tv 5e-4 --ano 5e-4
 ```
 
 ImageNet:
 ```bash
-python rec_mult.py --signed --save_image --cost_fn sim  --indices def  --weights equal --init randn --max_iterations 48000 --model ResNet18 --dataset I64 --data_path /home/ubuntu/data/ImageNet --num_images 1 --lr 1e-1 --tv 1e-6 --ano 1e-6
+python rec_mult.py --save_image --cost_fn sim  --indices def  --weights equal --init randn --max_iterations 48000 --model ResNet18 --dataset I64 --data_path /home/ubuntu/data/ImageNet --num_images 1 --lr 1e-1 --tv 1e-6 --ano 1e-6
 ```
 
 ```bash
-python rec_mult.py --signed --save_image --cost_fn sim  --indices def  --weights equal --init randn --max_iterations 48000 --model ResNet18 --dataset I64 --data_path /home/ubuntu/data/ImageNet --num_images 4 --lr 1e-1 --tv 5e-4 --ano 1e-4
+python rec_mult.py --save_image --cost_fn sim  --indices def  --weights equal --init randn --max_iterations 48000 --model ResNet18 --dataset I64 --data_path /home/ubuntu/data/ImageNet --num_images 4 --lr 1e-1 --tv 5e-4 --ano 1e-4
 ```
 
 ```bash
-python rec_mult.py --signed --save_image --cost_fn sim  --indices def  --weights equal --init randn --max_iterations 48000 --model ResNet18 --dataset I64 --data_path /home/ubuntu/data/ImageNet --num_images 8 --lr 1e-1 --tv 5e-4 --ano 5e-4
+python rec_mult.py --save_image --cost_fn sim  --indices def  --weights equal --init randn --max_iterations 48000 --model ResNet18 --dataset I64 --data_path /home/ubuntu/data/ImageNet --num_images 8 --lr 1e-1 --tv 5e-4 --ano 5e-4
 ```
 
 You are supposed to find the instructions of running experiments on baselines in `baseline.sh`.
@@ -101,21 +101,21 @@ We include additive_noise, gradient_sparse, gradient_clip and Soteria four defen
 
 For example, to use various ratio of gradient_sparsity:
 ```bash
-python rec_mult.py --signed --save_image --cost_fn sim  --indices def  --weights equal --init randn --max_iterations 80000 --model ResNet18 --dataset I64 --data_path /home/ubuntu/data/ImageNet --num_images 4 --lr 1e-1 --tv 5e-4 --ano 1e-4 --defense --sparse_ratio 5
+python rec_mult.py --save_image --cost_fn sim  --indices def  --weights equal --init randn --max_iterations 80000 --model ResNet18 --dataset I64 --data_path /home/ubuntu/data/ImageNet --num_images 4 --lr 1e-1 --tv 5e-4 --ano 1e-4 --defense --sparse_ratio 5
 ```
 
 ```bash
-python rec_mult.py --signed --save_image --cost_fn sim  --indices def  --weights equal --init randn --max_iterations 80000 --model ResNet18 --dataset I64 --data_path /home/ubuntu/data/ImageNet --num_images 4 --lr 1e-1 --tv 5e-4 --ano 1e-4 --defense --sparse_ratio 95
+python rec_mult.py --save_image --cost_fn sim  --indices def  --weights equal --init randn --max_iterations 80000 --model ResNet18 --dataset I64 --data_path /home/ubuntu/data/ImageNet --num_images 4 --lr 1e-1 --tv 5e-4 --ano 1e-4 --defense --sparse_ratio 95
 ```
 
 ```bash
-python rec_mult.py --signed --save_image --cost_fn sim  --indices def  --weights equal --init randn --max_iterations 80000 --model ResNet18 --dataset I64 --data_path /home/ubuntu/data/ImageNet --num_images 4 --lr 1e-1 --tv 5e-4 --ano 5e-4 --defense --sparse_ratio 99
+python rec_mult.py --save_image --cost_fn sim  --indices def  --weights equal --init randn --max_iterations 80000 --model ResNet18 --dataset I64 --data_path /home/ubuntu/data/ImageNet --num_images 4 --lr 1e-1 --tv 5e-4 --ano 5e-4 --defense --sparse_ratio 99
 ```
 
 To run experiments on trained global models, use `--trained_model` and `--epochs`. If there is no existing model in `/models`, a new model will be trained automatically. For example:
 
 ```bash
-python rec_mult.py --signed --save_image --cost_fn sim  --indices def  --weights equal --init randn --max_iterations 80000 --model ResNet18 --dataset I64 --data_path /home/ubuntu/data/ImageNet --num_images 4 --lr 1e-1 --tv 5e-4 --ano 5e-4 --trained_model --epochs 120
+python rec_mult.py --save_image --cost_fn sim  --indices def  --weights equal --init randn --max_iterations 80000 --model ResNet18 --dataset I64 --data_path /home/ubuntu/data/ImageNet --num_images 4 --lr 1e-1 --tv 5e-4 --ano 5e-4 --trained_model --epochs 120
 ```
 
 ### Note
