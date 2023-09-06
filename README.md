@@ -2,7 +2,7 @@
 
 The code for implementing our ***GI-PIP: Do We Require Impractical Auxiliary Dataset for Gradient Inversion Attacks?***
 
-
+<img src="./figures/main.png" width="100%">
 
 ## Requirements
 
