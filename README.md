@@ -15,8 +15,6 @@ pip install -r requirements.txt
 You are supposed to download CIFAR-10, ImageNet or any dataset you want, and provide its location.
 
 ### Pretrained Generative Models
-We didn't include ptrained models in the supplementary material. You need to train your model and bring it here.
-
 For Auto-Encoders implementation, we used:
 * https://github.com/chenjie/PyTorch-CIFAR-10-autoencoder
 * https://github.com/Horizon2333/imagenet-autoencoder
@@ -25,18 +23,20 @@ For Stylegan2 implementation, we used:
 * https://github.com/NVlabs/stylegan2-ada-pytorch
 * https://github.com/adriansahlman/stylegan2_pytorch
 
-
 For DCGAN implementation, we used:
 * https://github.com/csinva/gan-vae-pretrained-pytorch
 * https://github.com/DmitryUlyanov/deep-image-prior
 
 For Auto-Encoders used to generate Anomaly Score loss, you need to rename your model's file as `ae.pth`, and put it in `inversefed\AE_model\{dataset}`, for example: `inversefed\AE_model\CIFAR10\ae.pth`.
 
-For DCGAN and StyleGAN2 used in GIAS,  put them under the corresponding folder in `inversefed/genmodels/`. Check `inversefed/porting.py` for more details. Specifically, for pytorch versions higher than v1.11, we have fixed it according to the following patch: 
+For DCGAN and StyleGAN2 used in GIAS,  put them under the corresponding folder in `inversefed/genmodels/`. Check `inversefed/porting.py` for more details. 
+
+If you want to build your own network, please modify `inversefed/AE_model/models/builder.py` and add your own pytorch module here.
+
+Specifically, for pytorch versions higher than v1.11, we have fixed it according to the following patch: 
 
 * https://github.com/NVlabs/stylegan3/commit/407db86e6fe432540a22515310188288687858fa
 * https://github.com/NVlabs/stylegan3/issues/188
-
 ## Running Expriments
 
 ### Basic Options
