@@ -99,6 +99,18 @@ You are supposed to find the instructions of running experiments on baselines in
 
 ### Experiments on Defense Scheme
 
+<center>
+    <table>
+        <tr>
+            <td style="border: none;"><img src="./figures/ssim_noise.png" width="100%"></td>
+            <td style="border: none;"><img src="./figures/ssim_sparsity.png" width="100%"></td>
+            <td style="border: none;"><img src="./figures/ssim_stage.png" width="100%"></td>
+            <td style="border: none;"><img src="./figures/ssim_batchsize.png" width="100%"></td>
+    	</tr>
+    </table>
+</center>
+
+
 We include additive_noise, gradient_sparse, gradient_clip and Soteria four defense methods into our code. You can adjust defense scheme as you wish. Check `defense.py` for more details.
 
 For example, to use various ratio of gradient_sparsity:
