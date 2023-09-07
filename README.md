@@ -14,7 +14,7 @@ pip install -r requirements.txt
 ## Setup
 
 ### Dataset
-You are supposed to download CIFAR-10, ImageNet or any dataset you want, and provide its location.
+You are supposed to download CIFAR-10, ImageNet or any dataset you want, and provide its location through the command line.
 
 ### Pretrained Generative Models
 For Auto-Encoders implementation, we used:
