@@ -136,3 +136,6 @@ python rec_mult.py --save_image --cost_fn sim  --indices def  --weights equal --
 Our code is based on：
 * https://github.com/JonasGeiping/invertinggradients
 * https://github.com/ml-postech/gradient-inversion-generative-image-prior.
+
+### License
+This project is released under the MIT License.
