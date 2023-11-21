@@ -111,7 +111,7 @@ You are supposed to find the instructions of running experiments on baselines in
 </center>
 
 
-We include additive_noise, gradient_sparse, gradient_clip and Soteria four defense methods into our code. You can adjust defense scheme as you wish. Check `defense.py` for more details.
+We include additive_noise, gradient_sparse, gradient_clip and Soteria four defense methods into our code. You can adjust defense scheme and the parameters as you wish. Check `defense.py` for more details.
 
 For example, to use various ratio of gradient_sparsity:
 ```bash
