@@ -2,6 +2,8 @@
 
 The code for implementing our ***GI-PIP: Do We Require Impractical Auxiliary Dataset for Gradient Inversion Attacks?***
 
+This paper is accepted to International Conference on Acoustics, Speech and Signal Processing (ICASSP) 2024. You can find the paper at https://arxiv.org/abs/2401.11748.
+
 <img src="./figures/small_main.png" width="100%">
 
 ## Requirements
