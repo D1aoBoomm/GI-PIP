@@ -139,5 +139,17 @@ Our code is based on：
 * https://github.com/JonasGeiping/invertinggradients
 * https://github.com/ml-postech/gradient-inversion-generative-image-prior.
 
+### Citation
+```
+@inproceedings{sun2024gi,
+  title={Gi-pip: Do we require impractical auxiliary dataset for gradient inversion attacks?},
+  author={Sun, Yu and Xiong, Gaojian and Yao, Xianxun and Ma, Kailang and Cui, Jian},
+  booktitle={ICASSP 2024-2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={4675--4679},
+  year={2024},
+  organization={IEEE}
+}
+```
+
 ### License
 This project is released under the MIT License.
